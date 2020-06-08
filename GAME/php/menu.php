@@ -44,12 +44,19 @@
                 </form>
             </div>
             <hr>
+            <div class="sub-text center-align">
+                    <span class="friends-panel-subtitle">Vos amis</span>
+            </div>
             <div class="friends-display">
                 <div class="chip">
                     <img src="../img/account_circle-black-18dp.svg" alt="Contact Person">
                     <span>Name</span>
                     <i class="material-icons">mail</i>
                 </div>
+            </div>
+            <hr>
+            <div class="add-friends center-align">
+                <a href="#" class="waves-effect waves-light btn-small"><i class="material-icons left">add</i>Ajouter des amis</a>
             </div>
         </div>
     </header>
