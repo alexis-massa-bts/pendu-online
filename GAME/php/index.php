@@ -10,7 +10,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Pendu - Connexion</title>
 </head>
 <body>
@@ -18,8 +18,8 @@
     <h2 class="center-align">Connexion</h2>
 
     <div class="buttons center-align">
-        <a href="/php/connexion.php" class="waves-effect waves-light btn-large"><i class="material-icons right">arrow_forward</i> Se connecter</a> <br>
-        <a href="/php/inscription.php" class="waves-effect waves-light btn-large"><i class="material-icons right">person_add</i>S'incrire</a>
+        <a href="connexion.php" class="waves-effect waves-light btn-large"><i class="material-icons right">arrow_forward</i>Se connecter</a><br>
+        <a href="inscription.php" class="waves-effect waves-light btn-large"><i class="material-icons right">person_add</i>S'incrire</a>
     </div>
 
 </body>
