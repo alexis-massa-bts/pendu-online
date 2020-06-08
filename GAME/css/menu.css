@@ -151,3 +151,12 @@ h2{
     color:black;
     cursor: pointer;
 }
+
+.add-friends {
+    padding: 20px;
+}
+
+.friends-panel-subtitle{
+    text-transform: uppercase;
+    font-weight: 700;
+}
