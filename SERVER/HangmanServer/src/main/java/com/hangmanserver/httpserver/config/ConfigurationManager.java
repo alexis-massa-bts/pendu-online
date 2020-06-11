@@ -3,8 +3,6 @@ package com.hangmanserver.httpserver.config;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.hangmanserver.httpserver.util.Json;
-import com.sun.net.httpserver.HttpPrincipal;
-import com.sun.net.httpserver.HttpsConfigurator;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
