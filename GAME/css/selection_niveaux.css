@@ -22,28 +22,29 @@ main{
 }
 
 .levels div{
-    position: absolute;
+    position: relative;
     width: 130px;
     height: 130px;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.219);
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
+    cursor: pointer;
 }
 
 .levels div span{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
+    left:50%;
+    transform:translate(-50%,-50%);
     color: white;
     font-size: 3;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
 }
 
 h1{
@@ -103,4 +104,48 @@ h1{
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
 }
+
+.levels div.level1{
+    position: absolute;
+    bottom: -97px;
+    left: 52px;
+}
+
+.levels div.level2{
+    position: absolute;
+    bottom: 34px;
+    left: 252px;
+}
+
+.levels div.level3-1{
+    position: absolute;
+    bottom: 311px;
+    left: 313px;
+}
+
+.levels div.level3-2{
+    position: absolute;
+    bottom: -48px;
+    left: 566px;
+}
+
+.levels div.level4-1{
+    position: absolute;
+    top: -6px;
+    left: 528px;
+}
+
+.levels div.level4-2{
+    position: absolute;
+    bottom: 113px;
+    left: 773px;
+}
+
+.levels div.level5{
+    position: absolute;
+    top: 55px;
+    left: 834px;
+}
+
+
 

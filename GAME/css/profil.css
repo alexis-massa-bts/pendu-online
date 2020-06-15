@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(49, 49, 49);
+    height: 100vh;
+}
+
+header{
+    height: 230px;
+    position: relative;
+}
+
+h1{
+    margin: 0;
+}
+
+
+h1,h2{
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 10px;
+}
+
+h2{
+    font-size: 10px;
+    margin-bottom:10%;
+}
+
+main{
+    padding: 0px;
+}
+
+.profil-container{
+    position: absolute;     
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.profil-container img{
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.profil-picture{
+    position: absolute;
+    left: 47.5%;
+    padding-top: 40px;
+}
+
+.btn-modify{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.stats{
+    background: white;
+    border: 2px solid #2BBBAD;
+    text-align: center;
+    margin: 10px;
+}

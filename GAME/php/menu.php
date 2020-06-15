@@ -76,8 +76,6 @@
             $('.friends-panel-icon').css('color', '#2BBBAD');
             $('.friends-panel-view').slideDown(300);
         }
-        
-
     });
     </script>
 </body>

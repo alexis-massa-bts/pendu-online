@@ -27,16 +27,16 @@
         <h1>Selection de niveaux</h1>
 
         <div class="levels">
-            <div class="level1"><span>1</span></div>
-            <div class="level2"><span>2</span></div>
-            <div class="level3"><span>3</span></div>
-            <div class="level4"><span>4</span></div>
-            <div class="level5"><span>5</span></div>
-            <div class="level6"><span>6</span></div>
-            <div class="level7"><span>7</span></div>
-            <div class="level8"><span>8</span></div>
-            <div class="level9"><span>9</span></div>
-            <div class="level10"><span>10</span></div>
+            <div class="level1"><span>Level 1</span></div>
+            <div class="level2"><span>Level 2</span></div>
+            <div class="level3-1"><span>Level 3-1</span></div>
+            <div class="level4-1"><span>Level 4-1</span></div>
+            <div class="level3-2"><span>Level 3-2</span></div>
+            <div class="level4-2"><span>Level 4-2</span></div>
+            <div class="level5"><span>Level 5</span></div>
+            <div class="level6"><span>Level 6</span></div>
+            <div class="level7"><span>Level 7</span></div>
+            <div class="level-bonus"><span>Level 8</span></div>
         </div>
     </main>
 </body>
