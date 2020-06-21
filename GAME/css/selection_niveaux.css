@@ -21,11 +21,37 @@ main{
     position: relative;
 }
 
+.profil-container .username-session{
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.profil-container .logout-btn{
+    size: 20px;
+    color: white;
+    position: absolute;
+    top: 168%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
 .levels div{
     position: relative;
     width: 130px;
     height: 130px;
-    background-color: rgba(255, 0, 0, 0.219);
+    background-color: rgba(255, 0, 0, 0);
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -34,10 +60,15 @@ main{
     cursor: pointer;
 }
 
+.levels div:hover{
+    background-color:teal ;
+}
+
 .levels div span{
+    width: 20%;
     position: absolute;
     top: 50%;
-    left:50%;
+    left:45%;
     transform:translate(-50%,-50%);
     color: white;
     font-size: 3;
@@ -45,6 +76,9 @@ main{
     -moz-transform:translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%);
     -o-transform:translate(-50%,-50%);
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
 }
 
 h1{
@@ -105,6 +139,34 @@ h1{
     -o-transform: translateX(-50%);
 }
 
+.levels div i{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+
+}
+
+/* LOCKED LEVELS */
+    .levels div.locked:hover{
+        background-color: rgb(49, 23, 23);
+    }
+
+    .levels div.locked:hover span{
+        color: transparent;
+    }
+
+    .levels div.locked:hover i{
+        display: block;
+    }
+/* END LOCKED LEVELS*/
+
 .levels div.level1{
     position: absolute;
     bottom: -97px;
@@ -146,6 +208,31 @@ h1{
     top: 55px;
     left: 834px;
 }
+
+.levels div.level6{
+    position: absolute;
+    top: 25px;
+    right: 637px;
+}
+
+.levels div.level7{
+    position: absolute;
+    top: -84px;
+    right: 370px;
+}
+
+.levels div.level-bonus{
+    position: absolute;
+    bottom: -110px;
+    left: 933px;
+}
+
+.levels div.level-bonus span{
+    left: 44px;
+    top: 78px;
+}
+
+
 
 
 
