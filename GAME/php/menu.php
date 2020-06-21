@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION['UserName'])) {
+    header("location:index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -21,6 +27,16 @@
             <a href="#">
                 <div class="profil-container">
                     <img src="../img/account_circle-white-18dp.svg" alt="profil Picture">
+                    <span class="username-session">
+                        <?php 
+                            if (isset($_SESSION['UserName'])) {
+                                echo $_SESSION['UserName'];
+                                echo ' <a class="logout-btn waves-effect waves-light btn" href="logout.php?logout">logout</a> ';
+                            }else{
+
+                            }
+                        ?>
+                    </span>
                 </div>
             </a>
         </div>
@@ -62,7 +78,7 @@
     </header>
 
     <div class="buttons center-align">
-        <a href="#" class="waves-effect waves-light btn-large"><i class="material-icons left">person</i>Solo</a><br>
+        <a href="selection-niveaux.php" class="waves-effect waves-light btn-large"><i class="material-icons left">person</i>Solo</a><br>
         <a href="#" class="waves-effect waves-light btn-large"><i class="material-icons left">people</i>Multijoueurs</a><br>
         <a href="#" class="waves-effect waves-light btn-large"><i class="material-icons left">tune</i>Options</a>
     </div>

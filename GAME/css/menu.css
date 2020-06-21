@@ -59,6 +59,33 @@ h2{
     -o-transform: translate(-50%,-50%);
 }
 
+.profil-container .username-session{
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+
+.profil-container .logout-btn{
+    size: 20px;
+    color: white;
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
 .profil-picture{
     padding: 20px;
 }

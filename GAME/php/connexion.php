@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if (isset($_SESSION['UserName'])) {
+        header("location:menu.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -21,30 +27,48 @@
 
     <main class="center-align">
         <div class="card z-depth-5">
-            <form>
+            <form action="process.php" method="POST">
                 <div class="row">
                     <div class="input-field">
                         <i class="material-icons prefix">mail</i>
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
+                        <input name="username" id="username" type="text" class="validate">
+                        <label>Nom d'utilisateur</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field">
                         <i class="material-icons prefix">lock</i>
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Mot de passe</label>
+                        <input name="password" id="password" type="password" class="validate">
+                        <label>Mot de passe</label>
                     </div>
                 </div>
+                <?php
+                    if (@$_GET['empty']==true) { 
+                ?>
+                   <div class="alert-empty right-align">
+                        <span><?php echo $_GET['empty'] ?></span>
+                   </div>     
+                <?php        
+                 }
+                ?>
+
+                <?php
+                    if (@$_GET['invalide']==true) { 
+                ?>
+                   <div class="alert-invalide center-align">
+                        <span><?php echo $_GET['invalide'] ?> </span> 
+                   </div>     
+                <?php        
+                 }
+                ?>
                 <div class="row">
-                    <button class="btn waves-effect waves-light" type="submit" name="action">se connecter
+                    <button id="submit-btn" class="btn waves-effect waves-light" type="submit" name="login">se connecter
                         <i class="material-icons right">login</i>
                     </button>
                 </div>
             </form>
         </div>
     </main>
-
 </body>
 
 </html>
