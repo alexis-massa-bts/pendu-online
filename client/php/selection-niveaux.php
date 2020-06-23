@@ -1,7 +1,16 @@
 <?php
+require_once('bd_connect.php');
 session_start();
 if (!isset($_SESSION['UserName'])) {
     header("location:index.php");
+}else{
+    $query="select solo_level from users where name_users='".$_SESSION['UserName']."' ";
+    $result=mysqli_query($conn,$query);
+    if (mysqli_fetch_assoc($result)) {
+        $user_level = mysqli_fetch_array($result);
+    }else{
+        header("location:menu.php?error_levels-loading=les niveaux n'ont pas peux être chargés");
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -40,58 +49,63 @@ if (!isset($_SESSION['UserName'])) {
                 </div>
             </a>
         </div>
-        <h1>Selection de niveaux</h1>
+        <h1>Selection de niveaux></h1>
+        <div class="arrow-back">
+            <a href="menu.php"><img src="../img/arrow_back-white-18dp.svg" alt="arrow back"></a><br>
+            <span>Retour</span>
+        </div>
 
         <div class="levels">
-            <div class="level1"><span class="center-align">Level 1</span></div>
+            <div class="level level1"><span class="center-align">Level 1</span></div>
 
-            <div class="level2 locked">
+            <div class="level level2 locked">
                 <span class="center-align">Level 2</span>
                 <i class="material-icons lock">lock</i>
             </div>
 
-            <div class="level3-1 locked">
+            <div class="level level3 locked">
                 <span class="center-align">Level 3-1</span>
                 <i class="material-icons lock">lock</i>
             </div>
 
-            <div class="level4-1 locked">
+            <div class="level level4 locked">
                 <span class="center-align">Level 4-1</span>
                 <i class="material-icons lock">lock</i>
             </div>
 
-            <div class="level3-2 locked">
+            <div class="level level3 locked">
                 <span class="center-align">Level 3-2</span>
                 <i class="material-icons lock">lock</i>
             </div>
 
-            <div class="level4-2 locked">
+            <div class="level level4 locked">
                 <span class="center-align">Level 4-2</span>
                 <i class="material-icons lock">lock</i>
             </div>
 
-            <div class="level5 locked">
+            <div class="level level5 locked">
                 <span class="center-align">Level 5</span>
                 <i class="material-icons lock">lock</i>
             </div>
 
-            <div class="level6 locked">
+            <div class="level level6 locked">
                 <span class="center-align">Level 6</span>
                 <i class="material-icons lock">lock</i>
             </div>
 
-            <div class="level7 locked">
+            <div class="level level7 locked">
                 <span class="center-align">Level 7</span>
                 <i class="material-icons lock">lock</i>
             </div>
 
-            <div class="level-bonus locked">
+            <div class="level level-bonus locked">
                 <span class="center-align">Magasin</span>
                 <i class="material-icons lock">lock</i>
             </div>
 
         </div>
     </main>
+    <script src="../js/solo-levels.js"></script>
 </body>
 
 </html>

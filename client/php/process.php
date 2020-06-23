@@ -15,13 +15,11 @@ if (isset($_POST['login'])){
             $_SESSION['UserName'] = $_POST['username'];
             header("location:menu.php");
         }else{
-            header("location:connexion.php?invalide=les idendifiants ne sont pas correctes");
+            header("location:connexion.php?invalide=les idendifiants ne sont pas corrects");
         }
     }
-
- }else{
-
+}else{
     echo 'un probléme est survenu, vérifier la connexion avec la base de donnée';
- }
+}
 
 ?>
